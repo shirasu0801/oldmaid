@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ババ抜き - Old Maid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>ババ抜き</h1>
+
+        <div id="start-screen" class="screen">
+            <button id="start-btn" class="btn-primary">ゲーム開始</button>
+        </div>
+
+        <div id="game-screen" class="screen hidden">
+            <!-- CPU Area -->
+            <div class="cpu-area">
+                <div class="player-label">CPU <span id="cpu-count">(0枚)</span></div>
+                <div id="cpu-hand" class="hand cpu-hand"></div>
+            </div>
+
+            <!-- Message Area -->
+            <div id="message" class="message"></div>
+
+            <!-- Discarded Pairs -->
+            <div class="discard-area">
+                <div class="discard-label">捨て札</div>
+                <div id="discard-pile" class="discard-pile"></div>
+            </div>
+
+            <!-- Player Area -->
+            <div class="player-area">
+                <div class="player-label">あなた <span id="player-count">(0枚)</span></div>
+                <div id="player-hand" class="hand player-hand"></div>
+            </div>
+
+            <!-- Game Over -->
+            <div id="game-over" class="game-over hidden">
+                <div id="result-message"></div>
+                <button id="restart-btn" class="btn-primary">もう一度プレイ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../build/game.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
