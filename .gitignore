@@ -19,9 +19,9 @@ x86/
 *.ilk
 *.aps
 
-# Emscripten / WebAssembly
+# Emscripten / WebAssembly（成果物は build/ 配下に限定する。web/app.js などのソースは無視しない）
+build/
 *.wasm
-*.js
 *.wasm.map
 
 # その他

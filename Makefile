@@ -41,7 +41,7 @@ debug: $(OUTPUT)
 
 # Serve locally (requires Python)
 serve:
-	@echo "Starting local server at http://localhost:8080"
-	@cd web && python -m http.server 8080
+	@echo "Starting local server at http://localhost:8080/web/"
+	@python -m http.server 8080
 
 .PHONY: all clean debug serve
